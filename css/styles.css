@@ -89,6 +89,7 @@ address {
 .header-address-list {
     display: flex;
     align-items: center;
+    gap: 40px;
 }
 
 
@@ -370,10 +371,10 @@ address {
     fill: var(--color-cloud);
 }
 
-.team-soc-link:hover,
-:focus {
+.team-soc-link:hover {
     background-color: var(--color-ocean);
 }
+
 
 /*-------CUSTOMERS----*/
 
@@ -413,10 +414,15 @@ address {
     fill: var(--color-light-slate);
 }
 
-.customers-link:hover,
-:focus {
+.customers-link:hover  {
+    border: 1px solid var(--color-ocean);
+    border-radius: 4px;
+}
+
+.customers-link:hover .customers-icon {
     fill: var(--color-ocean);
 }
+
 
 /*------FOOTER--------*/
 
@@ -519,8 +525,7 @@ address {
     fill: var(--color-cloud);
 }
 
-.footer-social-link:hover,
-:focus {
+.footer-social-link:hover {
     background-color: var(--color-green);
 }
 
