@@ -403,7 +403,7 @@ address {
 }
 
 .customers-link {
-    display: flex;
+    display: block;
     justify-content: center;
     width: 168px;
     height: 88px;
