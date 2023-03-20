@@ -242,7 +242,6 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 264px;
     height: 112px;
     background: var(--color-cloud);
     border-radius: 4px;
@@ -393,47 +392,41 @@ address {
 }
 
 .customers-list {
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 24px;
 
 }
+.customers-item {
+    flex-basis: calc((100% - 120px) / 6);
+}
 
 .customers-link {
-    display: block;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 168px;
     height: 88px;
     border-radius: 4px;
     border: 1px solid var(--color-light-slate);
-    padding: 16px 32px;
-
+    padding: 10px;  
+    color: var(--color-light-slate);
 }
 
 .customers-icon {
-    fill: var(--color-light-slate);
+    fill: currentColor;
 }
 
 .customers-link:hover {
     border: 1px solid var(--color-ocean);
-    border-radius: 4px;
+    color: var(--color-ocean);
 }
 
-.customers-link:hover .customers-icon {
-    fill: var(--color-ocean);
-}
 
 .customers-link:focus {
     border: 1px solid var(--color-ocean);
-    border-radius: 4px;
+    color: var(--color-ocean);
 }
 
-.customers-link:focus .customers-icon {
-    fill: var(--color-ocean);
-}
 
 /*------FOOTER--------*/
 
